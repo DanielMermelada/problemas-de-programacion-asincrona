@@ -8,7 +8,7 @@ public class Villacampo extends Vereda implements Senal {
     @Override
     public void obtenerSenal(){
         CalidadSenal = 2;
-        System.out.println("Senal muy buena");
+        System.out.println("Tulipanes tiene Senal muy buena, Calidad Senal: "+ CalidadSenal);
     }
 
 }

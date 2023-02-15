@@ -8,7 +8,7 @@ public class Tulipanes extends Vereda implements Senal {
     @Override
     public void obtenerSenal(){
         CalidadSenal = 0;
-        System.out.println("Senal inexistente");
+        System.out.println("Tulipanes tiene Senal inexistente, Calidad Senal: "+ CalidadSenal);
     }
 
 }

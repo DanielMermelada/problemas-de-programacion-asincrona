@@ -8,7 +8,7 @@ public class Chia extends Vereda implements Senal {
     @Override
     public void obtenerSenal(){
         CalidadSenal = 1;
-        System.out.println("Senal buena");
+        System.out.println("Chia tiene Senal buena, Calidad Senal: "+ CalidadSenal);
     }
 
 }

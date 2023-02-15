@@ -1,6 +1,8 @@
 package co.edu.unisabana.asincrono.radio.controlador;
 
+import co.edu.unisabana.asincrono.radio.entidad.Chia;
 import co.edu.unisabana.asincrono.radio.entidad.Tulipanes;
+import co.edu.unisabana.asincrono.radio.entidad.Villacampo;
 
 public class Radio extends Thread {
 
@@ -10,8 +12,19 @@ public class Radio extends Thread {
 
     public void run() {
         for (int i = 0; i <= 24; i++) {
-            System.out.println(this.getName());
-            Vereda tulipanes = new Tulipanes();
+            try {
+                sleep(1000);
+                System.out.println(this.getName());
+                Vereda tulipanes = new Tulipanes();
+                Vereda chia = new Chia();
+                Vereda villacampo = new Villacampo();
+                tulipanes.obtenerSenal();
+                chia.obtenerSenal();
+                villacampo.obtenerSenal();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+
         }
     }
 }
